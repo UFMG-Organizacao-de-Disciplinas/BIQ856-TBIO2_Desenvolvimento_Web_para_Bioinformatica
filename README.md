@@ -1,4 +1,4 @@
-# BIQ856-TBIO2_Desenvolvimento_Web_para_Bioinformatica
+# BIQ856-TBIO2_Desenvolvimento_Web_para_Bioinformatica [(Site)](https://diegomariano.com/dwb/)
 
 ## Aula 1
 
@@ -180,3 +180,78 @@ Exemplo:
 Uma pesquisa por "hello world" na barra de endereço pode aparecer como https://www.exemplo.com/search?q=hello%20world ou https://www.exemplo.com/search?q=hello+world.
 Em resumo, tanto %20 quanto + são formas de representar um espaço em URLs, sendo %20 a opção mais comum e recomendada.
 ```
+
+### Slide: CSS
+
+- Cascading Style Sheets (CSS)
+  - Linguagem de estilo para definir a apresentação de documentos HTML.
+- Por que em cascata?
+
+  - Especificidade
+    - Como o CSS é aplicado em cascata, regras mais específicas ou com maior prioridade podem sobrescrever regras anteriores.
+  - Progressão:
+    1. Folha de estilo do navegador
+    2. Folha de estilo do usuário (se existir)
+    3. Golha de estilo do desenvolvedor
+    4. Estilo externo (importado)
+    5. Estilo incorporado (tag `<style>`)
+    6. Estilo inline (atributo `style`)
+    7. Marcação !important
+
+- `<link rel="stylesheet" href="style.css" />`
+  - Linka o arquivo CSS externo ao HTML.
+- Outros jeitos
+  - Tag `<style>`:
+    - Ex.: `<style> color: red </style>`
+  - Atributo `style`:
+    - Ex.: `<p style="color: red;">Texto em vermelho</p>`
+
+#### Componentes do CSS
+
+- Tipos de seletores
+  - Tags: `<p>`, `<h1>`, `<div>`, etc.
+  - Classes: `<p class="minha-classe">`
+    - Pode ter vários na página
+  - ID: `<p id="meu-id">`
+    - Único, só pode ter um na página
+  - Seletores avançados:
+
+```css
+p {
+  /* Tag */
+  color: gray; /* Cor ciza para todas as tags <p> */
+}
+
+.texto-vermelho {
+  /* Classe */
+  color: red; /* Cor vermelha para todas as tags com a classe "texto-vermelho" */
+}
+
+#azul {
+  /* id */
+  color: blue; /* Cor azul para a tag com o ID "azul" */
+}
+body,
+html {
+  /* A vírgula é usada para colocar uma mesma regra a um conjunto de elementos */
+}
+```
+
+#### Pseudo-classes
+
+- `:hover`: Aplica estilo quando o mouse passa sobre o elemento.
+
+#### Propriedades
+
+- Propriedades para textos:
+  - color
+  - font-size
+  - font-style
+- Tamanhos de elemento
+
+#### Tarefa pra casa
+
+- Body
+  - Header
+  - Main
+  - Footer

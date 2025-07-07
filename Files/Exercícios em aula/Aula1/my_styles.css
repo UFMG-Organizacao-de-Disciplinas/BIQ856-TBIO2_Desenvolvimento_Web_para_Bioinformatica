@@ -1,0 +1,52 @@
+/* Arquivo de estilos */
+
+h1 {
+  color: red;
+  /* Cor vermelha para o título */
+}
+
+.negrito {
+  font-weight: bold;
+  /* Texto em negrito */
+}
+
+#enviar {
+  width: 100%;
+}
+
+.espacamento {
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+/*
+Azul do botão: 0f6efe
+Azul hover: 155ed7
+Azul-borda-vermelho: dc3445
+Cinza do botão: 6c747d
+*/
+
+.botao-arredondado {
+  border-radius: 5px;
+  border-width: 0px;
+
+  color: white;
+  /* font-weight: bold; */
+  padding: 10px;
+  margin-right: 5px;
+  border: solid;
+}
+
+#botao-azul {
+  background-color: #0f6efe;
+}
+
+#botao-azul:hover {
+  background-color: #155ed7;
+  border-color: #dc3445;
+  border-width: 1px;
+}
+
+#botao-cinza {
+  background-color: #6c747d;
+}
