@@ -104,3 +104,79 @@
   - `<u>`: Sublinhado
 - Links:
   - `<a href="https://www.example.com">Link</a>`
+  - `<a href="retorno.html" target="_blank">Próxima página</a>`
+    - `target="_blank"`: Abre o link em uma nova aba.
+    - `title="Descrição do link"`: Descrição do link ao passar o mouse.
+
+---
+
+- Imagens:
+  - `<img src="img/imagem.jpg" alt="Descrição da imagem" height="200" />`
+  - `alt`: Descrição da imagem para acessibilidade.
+
+---
+
+- Tabelas:
+
+```html
+<table border="1">
+  <tr>
+    <th>Cabeça</th>
+  </tr>
+  <tr>
+    <td>A1</td>
+    <td>A2</td>
+    <td>A3</td>
+  </tr>
+</table>
+```
+
+---
+
+- Formulários:
+  - `<input type="..." \>`
+
+```html
+<form
+  action="processar.php"
+  method="POST"
+  id="formulario-contato"
+  name="form_contat"
+>
+  <label for="nome-id">Nome:</label>
+  <input type="text" id="nome-id" name="nome-name" required />
+
+  <label for="email-id">Email:</label>
+  <input type="email" id="email-id" name="email-name" required />
+
+  <input type="submit" value="Enviar" />
+</form>
+```
+
+```html
+<label for="Assunto-id">Assunto:</label><br />
+<input type="text" id="Assunto-id" name="Assunto-name" /><br />
+```
+
+- Label: Associa o rótulo ao campo de entrada.
+  - `for="nome"`: O valor deve ser igual ao `id` do campo de entrada.
+    - E para quê essa associação? Resposta: Acessibilidade, usabilidade, e para que o rótulo seja clicável.
+- `<span>`: Usado para estilizar partes do texto sem quebrar a linha.
+
+  - Exemplo: `<span style="color: red;">Texto em vermelho</span>`
+
+- Dúvida, por que o espaço foi convertido para `+` na URL e não `%20`?
+
+```text
+Em URLS, espaços são frequentemente substituídos por %20 ou +. O %20 é a representação hexadecimal de um espaço na codificação URL, enquanto o + é uma convenção mais antiga, mas ainda usada em alguns contextos.
+Explicação detalhada:
+Codificação URL:
+Quando você insere um espaço em uma URL, ele precisa ser codificado para garantir que a URL seja interpretada corretamente pelo servidor web.
+%20:
+Este é o padrão mais comum para representar um espaço em URLs. É a versão hexadecimal do caractere de espaço na tabela ASCII/UTF-8.
++:
+Antigamente, o caractere + era frequentemente usado como um substituto para espaços. Embora %20 seja a forma mais padronizada atualmente, o + ainda pode ser encontrado em algumas URLs, especialmente em formulários de pesquisa.
+Exemplo:
+Uma pesquisa por "hello world" na barra de endereço pode aparecer como https://www.exemplo.com/search?q=hello%20world ou https://www.exemplo.com/search?q=hello+world.
+Em resumo, tanto %20 quanto + são formas de representar um espaço em URLs, sendo %20 a opção mais comum e recomendada.
+```
