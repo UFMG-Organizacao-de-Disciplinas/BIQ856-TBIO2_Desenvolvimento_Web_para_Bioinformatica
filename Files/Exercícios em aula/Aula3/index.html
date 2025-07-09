@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Olá Mundo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: pink;
+        background-color: blue !important;
+        background-color: green !important;
+        color: #333333;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+    <script src="http://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripting.js"></script>
+  </head>
+  <body style="background-color: purple !important">
+    <!-- <body style="background-color: purple"> -->
+    <h1>Olá, Mundo!</h1>
+
+    <script>
+      // Script básico de exemplo
+      console.log("Olá, Mundo! Script carregado!");
+
+      // Função para alterar o texto do h1
+      function bg_notimportant() {
+        const h1 = document.querySelector("h1");
+        h1.textContent = "Cor amarela não importante!";
+        document
+          .querySelector("body")
+          .style.setProperty("background-color", "yellow");
+      }
+      function bg_important() {
+        const h1 = document.querySelector("h1");
+        h1.textContent = "Cor vermelha importante!";
+        document
+          .querySelector("body")
+          .style.setProperty("background-color", "red", "important");
+      }
+      // Ao clicar no amarelo, ele não muda
+      // Ao clicar no importante, ele fica vermelho
+      // Porém, se clicar no amarelo de novo, ele fica amarelo
+    </script>
+    <button onclick="bg_notimportant()">Não Importante</button>
+    <button onclick="bg_important()">Importante</button>
+    <div
+      style="height: 100px; width: 400px; position: relative"
+      class="viewer_3Dmoljs"
+      data-pdb="2POR"
+      data-backgroundcolor="0xffffff"
+      data-style="stick"
+    ></div>
+    <div
+      style="height: 400px; width: 400px; position: relative"
+      class="viewer_3Dmoljs"
+      data-pdb="1YCR"
+      data-backgroundcolor="0xffffff"
+      data-select1="chain:A"
+      data-style1="cartoon:color=spectrum"
+      data-surface1="opacity:.7; color:white"
+      data-select2="chain:B"
+      data-style2="stick"
+      ro
+    ></div>
+    <div id="PDB"></div>
+  </body>
+</html>
