@@ -255,3 +255,194 @@ html {
   - Header
   - Main
   - Footer
+
+## Aula 2 - Terça - Parte 1: Git e GitHub
+
+- Controle de versão
+  - local
+  - centralizado
+  - Distribuído (Git): Local + Remoto
+- De onde veio o Git?
+  - BitKeeper: centralizado
+    - 2005: Quebra de licença por engenharia reversa
+- GitHub: 2 anos depois do git
+- Normalmente: delta-based
+- Git: snapshot-based
+- Vantagens:
+  - Distribuído
+  - Seguro
+  - Flexível
+  - Rápido e local
+
+---
+
+### Os 3 estados
+
+- Working
+  - Modificado (modified)
+  - Preparado (staged) - Staging Index
+  - Confirmado (committed)
+- Tracked: Unmodified, Modified, Staged ("Está no palco/em cena")
+- Untracked: git não sabe que existe
+- Ignored: git não deve rastrear
+- Ele recomenda o livro do git que nem o site.
+
+---
+
+- Sistema (--system): [path]/etc/gitconfig
+- Global (--global): ~/.gitconfig
+- Repositório (--local): .git/config
+- `git config --list --show-origin`
+  - Mostra a origem de cada configuração
+
+---
+
+- Ajuda
+  - `git help <comando>`
+  - `git <comando> --help`
+  - `man git-<comando>`
+
+---
+
+- Criar repositório: `git init`
+- Adicionando arquivos (tracking): `git add <arquivo>`
+- Master $\to$ Main
+- `git add <nome_do_arquivo>`
+- `git commit -m "Mensagem do commit"`
+  - `-m`: Mensagem do commit
+
+---
+
+- Ignored:
+
+  - `.gitignore`: Arquivo que lista os arquivos e pastas que o Git deve ignorar.
+  - Exemplo de conteúdo do `.gitignore`:
+
+    ```text
+    # Ignorar arquivos temporários
+    *.tmp
+    # Ignorar diretórios de build
+    /build/
+    ```
+
+---
+
+- `git log`
+- `git log --oneline`
+- > Pra quê serve o HEAD -> main"?
+  - HEAD: Ponto de referência atual do repositório.
+  - main: Branch principal do repositório.
+- `git diff`|: Mostra as diferenças entre o estado atual do repositório e o último commit.
+
+### Repositórios Remotos
+
+- Dois tipos:
+  - Criar repositório local e adicionar a um remoto
+  - Clonar repositório já existente
+- `git status`
+- `git remote`
+- `git remote add origin`
+- `git remote -v`
+  - `-v`
+
+---
+
+- Dúvida: E o que acontece se eu ignorar algo que já foi added?
+  - Testes:
+    - (1) criar o arquivo `.gitignore` ignorando arquivos untracked
+      - Resultado: antes de adicionar o `.gitignore` nenhum dos dois foi removido do status
+    - (2) Após (1), adicionei o ignore
+      - Resultado: os arquivos no status seguem sendo mostrados
+    - (3) Após adicionados os arquivos, eu ignoro os já adicionados
+      - Resultado: os adicionados seguem adicionados
+    - (4) Após adicionados, removo do add
+      - Resultado: após remover do ignore, eles não apareciam mais.
+    - (5) Adicionar um arquivo que já foi ignorado
+      - Resultado: `hint: Use -f if you really want to add them.`
+
+### Fetch, Pull e Merge
+
+- `git fetch`
+- `git merge`
+- `git pull`: fetch + merge
+
+### Branches
+
+- Não usar checkout, usar switch pq o checkout usa mais coisas que o switch
+- Rebase não é tão usado
+
+### Fork
+
+## Aula 2 - Terça - Parte 2: Design Responsivo com Bootstrap CSS
+
+- Começo pela revisão da aula anterior
+- Design responsivo é aquele que se adapta às telas
+
+### Interfaces de sistemas web
+
+- Usuário -> Interface -> Sistema
+
+### Etapas do desenvolvimento de interfaces
+
+- Análise de requisitos: O que minah interface precisa
+- Desenvolvimento de design alternativos: Análise de concorrentes
+- Prototipação: wireframe, Mockup, Protótipo interativo
+- Avaliação: Testes com usuários
+
+---
+
+- Prototipação
+  - Figma
+  - Bootstrap
+
+#### Como usar Bootstrap?
+
+- Framework CSS
+  - Framework é um conjunto de códigos
+  - Diferença entre framework e biblitoeca: O framework exige que você siga certas regras de conduta, que te força a decidir fazer tais coisas.
+  - Exemplo: NextJS vs React.
+- Como usar?
+  - CSS, Script
+
+#### Cores
+
+- Padrões de cores:
+  - Muted, Success, danger, warning, info
+  - btn btn-muted...
+  - alert-success...
+  - Cor de fundo: bg-primary
+- text-(start|center|end)
+
+### Margens
+
+- p: padding
+- m: margin
+- y: eixo y (cima~baixo)
+- t: top
+- b: bottom
+- s: start
+- e: esquerda
+- só m ou só p: o lado do quadrado da diagonal
+
+### Sistema de Grade (grid system)
+
+- Sistema de 12 colunas
+- Row
+  - Col
+    - Por padrão divide igualmente entre a quantidade de itens na linha e na coluna
+    - col-lg-6: em tela larga ele ocupará 6 colunas
+    - col-sm-12 == col-12
+
+#### Design Responsivo
+
+- meta
+
+## Aula 3 - Quarta - Parte 1: Introdução ao JavaScript
+
+## Aula 3 - Quarta - Parte 2: JavaScript Funcional
+
+## Aula 4 - Quinta - Parte 1: Arquitetura de desenvolvimento (MVC, BFF, monolítico, microserviços)
+
+## Aula 4 - Quinta - Parte 2: CodeIgniter framework
+
+## Aula 5 - Sexta - Trabalho Final
