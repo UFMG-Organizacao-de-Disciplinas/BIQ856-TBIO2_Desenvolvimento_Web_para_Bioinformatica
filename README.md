@@ -439,6 +439,45 @@ html {
 
 ## Aula 3 - Quarta - Parte 1: Introdução ao JavaScript
 
+- O que é uma linguagem de script? É uma não compilada, sendo então interpretada pelo navegador.
+- Manipulação do DOM
+  - DOM: Document Object Model
+  - Manipulação do DOM: Interagir com os elementos HTML usando JavaScript.
+  - `document.body.style.backgroundColor = "red";`
+- Variáveis
+  - `var`: Global
+  - `let`: Local
+  - `const`: ...
+- Repetição
+  - `while`
+  - `for`
+- Objeto: "Tudo que você declara pode ser considerado um objeto"
+- Arrays
+- Funções
+  - Declaração de função: `function nomeDaFuncao() { ... }`
+  - Função anônima: `const minhaFuncao = function() { ... };`
+  - Arrow function: `const minhaFuncao = () => { ... };`
+- Eventos
+  - onchange
+  - onclick
+  - onmouseover
+  - onmouseout
+  - onkeydown
+  - onkeyup
+- Manipulando DOM:
+  - `let selecionado = document.querySelector("seletor");`
+  - `document.querySelector("body").style.backgroundColor = "#aaaaaa";`
+- Tabelas
+  - DataTables: interatividade
+- Proteínas: arquivo PDF ou SIF
+  - 3Dmol.js
+
+---
+
+- API
+  - then() é assíncrono
+  - async await
+
 ## Aula 3 - Quarta - Parte 2: JavaScript Funcional
 
 ## Aula 4 - Quinta - Parte 1: Arquitetura de desenvolvimento (MVC, BFF, monolítico, microserviços)

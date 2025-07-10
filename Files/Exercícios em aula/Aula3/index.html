@@ -71,5 +71,18 @@
       ro
     ></div> -->
     <div id="PDB" style="width: 500px; height: 500px"></div>
+    <div id="FASTA" class="FASTA">UPALELE</div>
+
+    <script>
+      // url de entrada
+      const url = "https://rest.uniprot.org/uniprotkb/P10635.fasta";
+      // requisição dos dados
+      const requisicao = fetch(url).then((resposta) => resposta.text());
+      // define o local que o dado será gravado
+      const local = document.querySelector("#FASTA");
+      console.log(local);
+      // grava o dado no documento
+      requisicao.then((dados) => (local.textContent = dados));
+    </script>
   </body>
 </html>
