@@ -480,6 +480,33 @@ html {
 
 ## Aula 3 - Quarta - Parte 2: JavaScript Funcional
 
+- [GitHub Diego](https://github.com/dcbmariano/livros)
+- Entrega do trabalho final: 14/07/2025, 23h59
+- Código e Vídeo. 5 a 10 minutos de vídeo.
+- E-mail: <rafaellemos42@gmail.com>
+
+---
+
+- Dinâmico vs interativo:
+  - Interativo: você pode interagir com a página, clicar, arrastar, etc.
+  - Dinâmico: a página muda de acordo com as ações do usuário ou outras condições
+- PDO: PHP Data Objects
+  - Conexão com banco de dados
+  - PDO é uma extensão do PHP que fornece uma interface para acessar bancos de dados.
+  - Permite trabalhar com diferentes bancos de dados usando a mesma API.
+- CodeIgniter
+- Arquitetura MVC (Model-View-Controller)
+  - Model: Lida com os dados e a lógica de negócios.
+  - View: Exibe os dados para o usuário.
+  - Controller: Interage com o Model e a View, processando as requisições do usuário.
+  - Pastas
+    - Models: Bancos de dados
+
+---
+
+- Criação de Templates
+- Bancos de dados
+
 ## Aula 4 - Quinta - Parte 1: Arquitetura de desenvolvimento (MVC, BFF, monolítico, microserviços)
 
 ## Aula 4 - Quinta - Parte 2: CodeIgniter framework
